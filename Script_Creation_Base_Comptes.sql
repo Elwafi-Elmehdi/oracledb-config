@@ -31,7 +31,7 @@ create sequence seq_type_operation order;
 
 
 insert into client
-values (seq_client.nextval, 'Naciri','Ahmed', 'Résidence Nassim N12', 'Casablanca');
+values (seq_client.nextval, 'Naciri','Ahmed', 'Rï¿½sidence Nassim N12', 'Casablanca');
 
 insert into client
 values (seq_client.nextval, 'Filali','Rachid', 'Rue 4 N52', 'Casablanca');
@@ -70,29 +70,14 @@ insert into type_compte
 values (seq_type_compte.nextval, 'Courant','Compte courant');
 
 
-insert into compte
-values (seq_compte.nextval, 1,'01/01/1997',2000, 12000, 1, 1);
-
-insert into compte
-values (seq_compte.nextval, 2,'11/01/1997',3000, 120000, 2, 1);
-
-insert into compte
-values (seq_compte.nextval, 2,'11/12/1997',3000, 150000, 3, 2);
-
-insert into compte
-values (seq_compte.nextval, 2,'11/01/1998',3000, 17000, 4, 2);
-
-insert into compte
-values (seq_compte.nextval, 2,'11/11/1998',3000, 120000, 5, 2);
-
-insert into compte
-values (seq_compte.nextval, 1,'11/12/1998',3500, 1800000, 6, 2);
-
-insert into compte
-values (seq_compte.nextval, 2,'11/12/1999',3000, 150000, 6, 2);
-
-insert into compte
-values (seq_compte.nextval, 1,'11/01/2000',3000, 120000, 7, 1);
+insert into compte values (seq_compte.nextval, 1,TO_DATE('01/01/1997','DD/MM/YYYY'),2000, 12000, 1, 1);
+insert into compte values (seq_compte.nextval, 2,TO_DATE('11/01/1997','DD/MM/YYYY'),3000, 120000, 2, 1);
+insert into compte values (seq_compte.nextval, 2,TO_DATE('11/12/1997','DD/MM/YYYY'),3000, 150000, 3, 2);
+insert into compte values (seq_compte.nextval, 2,TO_DATE('11/01/1998','DD/MM/YYYY'),3000, 17000, 4, 2);
+insert into compte values (seq_compte.nextval, 2,TO_DATE('11/11/1998','DD/MM/YYYY'),3000, 120000, 5, 2);
+insert into compte values (seq_compte.nextval, 1,TO_DATE('11/12/1998','DD/MM/YYYY'),3500, 1800000, 6, 2);
+insert into compte values (seq_compte.nextval, 2,TO_DATE('11/12/1999','DD/MM/YYYY'),3000, 150000, 6, 2);
+insert into compte values (seq_compte.nextval, 1,TO_DATE('11/01/2000','DD/MM/YYYY'),3000, 120000, 7, 1);
 
 
 insert into type_operation
