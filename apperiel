@@ -1,0 +1,1 @@
+(#No_Appareil Number(7),  Designation  Varchar(30), Prix Number(7,2), caracteristiques_techniques Varchar(50))
